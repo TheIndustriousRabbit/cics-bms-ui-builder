@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>test</title>
+    <script src="/dist/text_to_cics.js"></script>
+  </head>
+  <body>
+    <h1>Text to CICS</h1>
+    <h2>Input screen</h2>
+    <textarea rows="24" cols="80" id="input">+-------------------------------------------------------------------------------------------+
+| My COBOL Interface                                                                        |
++-------------------------------------------------------------------------------------------+
+| First Name: XXXXXXXXXXXXXXXX                                                              |
+| Last Name:  XXXXXXXXXXXXXXXX                                                              |
+| Social Security Number: 999-99-9999                                                       |
+|-------------------------------------------------------------------------------------------|
+| Tell me about your feelings:                                                              |
+| XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
+|-------------------------------------------------------------------------------------------|</textarea>
+
+    <button id="convert">Convert</button>
+
+    <h2>Output CICS</h2>
+    <pre id="output"></pre>
+
+    <script type="text/javascript">
+      document.getElementById('convert').addEventListener(
+        'click', () => {
+          const data = document.getElementById('input').value;
+
+          const response = p5cget("Main", "start")([data], null);
+
+          document.getElementById('output').innerText = response;
+        }
+      )
+    </script>
+  </body>
+</html>
