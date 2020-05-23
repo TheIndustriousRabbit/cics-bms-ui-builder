@@ -23,7 +23,6 @@ that inspired this project!
 ## Why?!?
 
 Because who doesn't want to use Node to compile Perl for use
-in the browser to build UIs for an ancient mainframe
-technology?!?
+in the browser to build UIs for an [ancient mainframe technology?](http://www.mftutor.com/cics/bms/bms-macro/dfhmdf/)!?
 
 ![ian malcolm in jurassic park](http://98ron.superunleaded.com/wp-content/uploads/2016/09/Ian-Malcolm-Quote.gif)
